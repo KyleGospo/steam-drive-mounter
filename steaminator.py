@@ -111,7 +111,7 @@ def main():
         exit(1)
 
     # Bazzite: Early exit here, modified versions of SteamOS's SD card mounting script replace the remainder of this functionality.
-    print(f"{GREEN}Setup complete.")
+    print(f"{GREEN}Setup complete. Please reboot your system to ensure all settings take effect.{RESET}")
     exit(0)
     
     mount_point = f"/media/{os.getlogin()}/steamgames"
