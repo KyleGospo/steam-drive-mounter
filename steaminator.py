@@ -110,6 +110,10 @@ def main():
         print(f"{RED}Error: No volume labeled 'steamgames' found.{RESET}")
         exit(1)
 
+    # Bazzite: Early exit here, modified versions of SteamOS's SD card mounting script replace the remainder of this functionality.
+    print(f"{GREEN}Setup complete.")
+    exit(0)
+    
     mount_point = f"/media/{os.getlogin()}/steamgames"
     print(f"{CYAN}Creating mount point at {mount_point}...{RESET}")
     run_command(f'sudo mkdir -p {mount_point}')
